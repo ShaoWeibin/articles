@@ -413,6 +413,7 @@ self.onerror = function(
 
 #### 版本更新
 如果你的 service worker 已经被安装，但是刷新页面时有一个新版本的可用，新版的 service worker 会在后台安装，但是还没激活。当不再有任何已加载的页面在使用旧版的 service worker 的时候，新版本才会激活。一旦再也没有更多的这样已加载的页面，新的 service worker 就会被激活。
+
 ![debug](https://github.com/ShaoWeibin/images/blob/master/
 
 ##### 自动更新
@@ -468,8 +469,10 @@ navigator.serviceWorker.register('/serviceWorker.js', {scope: '/'})
 ### Chrome 调试
 > - 使用 Chrome 浏览器，可以通过 Application -> Service Workers 面板查看和调试。
 ![debug](https://github.com/ShaoWeibin/images/blob/master/
+
 > -在 tab 页通过 chrome://serviceworker-internals/ 可查看所有的 Service Workers。
 ![debug](https://github.com/ShaoWeibin/images/blob/master/
+
 --- 
 
 ### 使用场景
