@@ -414,7 +414,7 @@ self.onerror = function(
 #### 版本更新
 如果你的 service worker 已经被安装，但是刷新页面时有一个新版本的可用，新版的 service worker 会在后台安装，但是还没激活。当不再有任何已加载的页面在使用旧版的 service worker 的时候，新版本才会激活。一旦再也没有更多的这样已加载的页面，新的 service worker 就会被激活。
 
-![debug](https://github.com/ShaoWeibin/images/blob/master/
+![version-update](https://github.com/ShaoWeibin/images/blob/master/sw%20update.png?raw=true)
 
 ##### 自动更新
 如果希望在有了新版本时，所有的页面都得到及时自动更新怎么办呢？可以在 install 事件中执行 self.skipWaiting() 方法跳过 waiting 状态，然后会直接进入 activate 阶段。接着在 activate 事件发生时，通过执行 self.clients.claim() 方法，更新所有客户端上的 Service Worker。
@@ -468,10 +468,12 @@ navigator.serviceWorker.register('/serviceWorker.js', {scope: '/'})
 
 ### Chrome 调试
 > - 使用 Chrome 浏览器，可以通过 Application -> Service Workers 面板查看和调试。
-![debug](https://github.com/ShaoWeibin/images/blob/master/
+
+![chrome-debug](https://github.com/ShaoWeibin/images/blob/master/chrome-debug.png?raw=true)
 
 > -在 tab 页通过 chrome://serviceworker-internals/ 可查看所有的 Service Workers。
-![debug](https://github.com/ShaoWeibin/images/blob/master/
+
+![chrome-internals](https://github.com/ShaoWeibin/images/blob/master/chrome-internals.png?raw=true)
 
 --- 
 
