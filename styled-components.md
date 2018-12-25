@@ -157,13 +157,13 @@ render(
 #### 定制主题
 
 ### 总结
-开箱即用，学习成本极低。
-很优雅的方式定义组件。
-支持组件继承，提高代码复用。
-不需要关注 css class 的命名问题。
-很简单的方式实现组件的动态样式定义。
-不需要配置 webpack 及 babel 转码等问题。
-vscode 支持语法高亮，对应插件为 `vscode-styled-components`。
+* 开箱即用，学习成本极低。
+* 很优雅的方式定义组件。
+* 支持组件继承，提高代码复用。
+* 不需要关注 css class 的命名问题。
+* 很简单的方式实现组件的动态样式定义。
+* 不需要配置 webpack 及 babel 转码等问题。
+* vscode 支持语法高亮，对应插件为 `vscode-styled-components`。
 
 ### 参考资料
 https://www.styled-components.com/
